@@ -1,10 +1,10 @@
 <?php
 $zip = new ZipArchive();
-$zip_status = $zip->open('test.zip');
+$zip_status = $zip->open('output.zip');
 
 if ($zip_status === true)
 {
-    if ($zip->setPassword("123456"))
+    if ($zip->setPassword('*innoWearTex18#'))
     {
         if (!$zip->extractTo(__DIR__))
             echo "Extraction failed (wrong password?)";
